@@ -1,10 +1,10 @@
 <h1>Photo Details</h1>
 
-<img src="<%= @the_source%>">
+<img src="<%= @my_photo.source%>">
 
-<p> <%=@the_caption %> </p>
+<p> <%=@my_photo.caption %> </p>
 
-<p> <%= @the_timestamp%> </p>
+<p> <%= time_ago_in_words(@my_photo.created_at)%> </p>
 
 <a href="#">Go back</a>
 <a href="#">Edit</a>
