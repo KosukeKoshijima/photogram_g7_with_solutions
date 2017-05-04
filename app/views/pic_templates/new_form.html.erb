@@ -1,23 +1,15 @@
-<h1>Add a new photo</h1>
+<h1> Add a new photo </h1>
 
 <form action="/create_photo">
-<div>
-<label for="source_input">
-Image URL
+<label for="image_url">
+  Image URL
 </label>
+  <input id="image_url" type="text" name="image_url">
+<label for ="the_caption">
+  Caption
+</lanel>
+  <input id="the_source" type="text" name="the_caption">
 
-<input id="source_input" type="text" name="the_source">
-</div>
+  <button>Create Photo</button>
 
-<div>
-<label for="caption_input">
-Caption
-</label>
-
-<input id="caption_input" type="text" name="the_caption">
-</div>
-
-<button>
-Create Photo
-</button>
 </form>
